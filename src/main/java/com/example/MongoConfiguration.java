@@ -32,8 +32,9 @@ public class MongoConfiguration extends AbstractReactiveMongoConfiguration {
 		return Jackson2ObjectMapperBuilder.json().build();
 	}
 
+
 	@Override
-	public MongoClient mongoClient() {
+	public MongoClient reactiveMongoClient() {
 		return MongoClients.create();
 	}
 
